@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projects-container,
+    .experience-details-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .project, .details-container {
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+  
+  
