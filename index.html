@@ -10,17 +10,24 @@
   </head>
 <body>
   <nav id="desktop-nav">
-    <div class="logo"><img src="assets/web developer logo.png" alt="logo" /></div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <div class="logo">
+      <img src="assets/web developer logo.png" alt="logo" />
     </div>
+    <div class="burger" id="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </ul>
+    <div class="theme-toggle-wrapper">
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </div>  
   </nav>
-
   <section id="profile">
     <div class="section_pic-container">
       <img src="assets/mimis_profile_circular.png" alt="Dimitris Profile Picture" />
@@ -36,8 +43,10 @@
       <div id="socials-container">
         <img src="assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/dimitris-organtzidis/'" />
         <img src="assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/DimitrisMimis'" />
+        <img src="assets/titktok.png" alt="My TikTok profile" class="icon" onclick="location.href='https://www.tiktok.com/@devod_0'" />
       </div>
     </div>
+    <img src="assets/arrow.png" alt="arrow icon" class="icon arrow icon-arrow" onclick="location.href='#about'" />
   </section>
 
   <section id="about">
@@ -45,7 +54,7 @@
     <h1 class="title">About Me</h1>
     <div class="section-container">
       <div class="section-pic-container">
-        <img src="assets/mimisphoto.png" alt="Profile Picture" class="about-pic" />
+        <img src="assets/mimisphoto.png" alt="Profile Picture" class="about-pic fade-in" />
       </div>
       <div class="about-details-container">
         <div class="about-containers">
@@ -60,7 +69,7 @@
             <p>Udemy <br />Full Stack Developer Bootcamp</p>
           </div>
         </div>
-        <div class="text-container">
+        <div class="text-container fade-in">
           <p>
             Let me introduce myself by starting with the fact that I was an experienced
             Hospitality and F&B Manager with over 10 years of proven success in operations,
@@ -78,9 +87,8 @@
         </div>
       </div>
     </div>
-    <img src="assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+    <img src="assets/arrow.png" alt="arrow icon" class="icon arrow icon-arrow" onclick="location.href='#experience'" />
   </section>
-
   <section id="experience">
     <p class="section_text_p1">Explore My</p>
     <h1 class="title">Experience</h1>
@@ -88,64 +96,118 @@
       <div class="details-container">
         <h2 class="experience-subtitle">Frontend Development</h2>
         <div class="article-container">
-          <article><img src="assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>HTML</h3><p>Intermediate</p></div></article>
-          <article><img src="assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>CSS</h3><p>Intermediate</p></div></article>
-          <article><img src="assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>JavaScript</h3><p>Intermediate</p></div></article>
-          <article><img src="assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>jQuery</h3><p>Basic</p></div></article>
-          <article><img src="assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>DOM</h3><p>Basic</p></div></article>
+          <article>
+            <img src="assets/checkmark.png" alt="icon" class="icon" />
+            <div class="text">
+              <h3>HTML</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/checkmark.png" alt="icon" class="icon" />
+            <div class="text">
+              <h3>CSS</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/checkmark.png" alt="icon" class="icon" />
+            <div class="text">
+              <h3>JavaScript</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/checkmark.png" alt="icon" class="icon" />
+            <div class="text">
+              <h3>jQuery</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/checkmark.png" alt="icon" class="icon" />
+            <div class="text">
+              <h3>DOM</h3>
+              <p>Basic</p>
+            </div>
+          </article>
         </div>
       </div>
-      <div class="details-container">
-        <h2 class="experience-subtitle">Backend Development</h2>
+      <div class="details-container backend">
+        <h2 class="experience-subtitle">Backend <br> Development</h2>
         <div class="article-container">
-          <article><img src="assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Node JS</h3><p>Basic</p></div></article>
-          <article><img src="assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>Express JS</h3><p>Basic</p></div></article>
-          <article><img src="assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>React JS</h3><p>Basic</p></div></article>
-          <article><img src="assets/checkmark.png" alt="Experience icon" class="icon" /><div><h3>PostgreSQL</h3><p>Basic</p></div></article>
+          <article>
+            <img src="assets/checkmark.png" alt="icon" class="icon" />
+            <div class="text">
+              <h3>Node JS</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/checkmark.png" alt="icon" class="icon" />
+            <div class="text">
+              <h3>Express JS</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/checkmark.png" alt="icon" class="icon" />
+            <div class="text">
+              <h3>React JS</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img src="assets/checkmark.png" alt="icon" class="icon" />
+            <div class="text">
+              <h3>PostgreSQL</h3>
+              <p>Basic</p>
+            </div>
+          </article>
         </div>
       </div>
     </div>
-    <img src="assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+    <img src="assets/arrow.png" alt="arrow icon" class="icon arrow icon-arrow" onclick="location.href='#projects'" />
   </section>
-
   <section id="projects">
     <p class="section_text_p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="projects-container">
       <div class="about-containers">
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img src="assets/move_it.png" alt="Project 1" class="project-img" />
-          <h2 class="experience-subtitle-project-title">Project One</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DimitrisMimis'">Github</button>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/move_it.png" alt="Project 1" class="project-img" />
+            <h2 class="experience-subtitle-project-title">Project One</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DimitrisMimis'">Github</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img src="assets/mix_and_match.png" alt="Project 2" class="project-img" />
-          <h2 class="experience-subtitle-project-title">Project Two</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DimitrisMimis'">Github</button>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/mix_and_match.png" alt="Project 2" class="project-img" />
+            <h2 class="experience-subtitle-project-title">Project Two</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DimitrisMimis'">Github</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img src="assets/Tindog.png" alt="Project 3" class="project-img" />
-          <h2 class="experience-subtitle-project-title">Project Three</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DimitrisMimis'">Github</button>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="assets/Tindog.png" alt="Project 3" class="project-img" />
+            <h2 class="experience-subtitle-project-title">Project Three</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/DimitrisMimis'">Github</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    <img src="assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+    <img src="assets/arrow.png" alt="arrow icon" class="icon arrow icon-arrow" onclick="location.href='#contact'" />
   </section>
+
   <section id="contact">
-    <p class="section-text-p1">Get In Touch</p>
+    <p class="section_text_p1">Get In Touch</p>
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
@@ -157,24 +219,11 @@
         <p><a href="https://www.linkedin.com/in/dimitris-organtzidis/">LinkedIn</a></p>
       </div>
     </div>
+    <img src="assets/arrow up.png" alt="back to top" class="icon arrow icon-arrow" onclick="location.href='#profile'" />
   </section>
-  <footer>
-    <!-- Burger Menu -->
-<div class="burger" id="burger">
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-</div>
 
-<nav id="nav-menu">
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-    <p>Copyright &#169; 2025 Dimitris Organtzidis. All Rights Reserved.</p>
+  <footer>
+    <p>Copyright &#169; 2025 Dimitris Organtzidis<br>All Rights Reserved</p>
   </footer>
 </body>
 </html>

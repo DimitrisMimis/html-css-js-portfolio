@@ -1,29 +1,273 @@
-@media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .projects-container,
-    .experience-details-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-    }
-  
-    .project, .details-container {
-      width: 90%;
-    }
-  
-    h1 {
-      font-size: 22px;
-      text-align: center;
-    }
+/* === Tablet & Mobile Screens === */
+@media screen and (max-width: 1024px) {
+  section {
+    margin: 0 1.5rem;
+  }
+
+  .section-container,
+  .about-containers,
+  .about-details-container,
+  .details-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .section-pic-container,
+  .section-pic-container img,
+  .section_pic-container,
+  .section_pic-container img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  .text-container p {
+    text-align: center;
+  }
+
+  .article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    justify-items: center;
+    gap: 1.5rem;
+    width: 100%;
   }
   
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
   
+  article img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .experience-details-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+  }
+
+  .contact-info-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .email.icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .section_text_p1,
+  .title,
+  .section_text_p2 {
+    text-align: center;
+  }
+
+  #about,
+  #experience,
+  #projects,
+  #contact {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+/* === Mobile Screens === */
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 2000;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 2001;
+  }
+
+  .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 80vw;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1500;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-links.show a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+  }
+
+  .nav-links.show a:hover {
+    color: orange;
+  }
+
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .section_pic-container img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-pic {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .email.icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .article-container {
+    align-items: center;
+  }
+
+  #about,
+  #experience,
+  #projects,
+  #contact {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+/* Για Mobile */
+.theme-toggle-wrapper {
+  position: absolute;
+  top: 0.8rem;
+  right: 4.2rem;
+  z-index: 1000;
+  margin: 0; 
+}
+
+
+
+.theme-toggle {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+}
+
+
+/* === Extra Small Screens === */
+@media screen and (max-width: 480px) {
+  .section_pic-container img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .section_text_p2 {
+    font-size: 1.3rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .contact-info-container img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .email.icon {
+    width: 35px;
+    height: 35px;
+  }
+}
