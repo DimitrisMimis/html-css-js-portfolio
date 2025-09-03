@@ -5,7 +5,7 @@ burger.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
-// --- SCROLL-ARROW VISIBILITY ---
+// SCROLL-ARROW VISIBILITY
 document.addEventListener("DOMContentLoaded", () => {
   const arrows = document.querySelectorAll(".icon-arrow");
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
-        fadeObserver.unobserve(entry.target); // να μην ξαναπαίξει
+        fadeObserver.unobserve(entry.target); 
       }
     });
   }, {
