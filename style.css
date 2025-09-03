@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -47,7 +52,7 @@ a:hover {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  transition: transform 1.3s ease;
+  transition: transform 1.5s ease;
 }
 
 .logo img:hover {
@@ -71,7 +76,7 @@ nav {
   flex-direction: row;
   gap: 2rem; 
   justify-content: center; 
-  align-items: center; 
+  align-items: center;
 }
 
 .nav-links.show {
